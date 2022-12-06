@@ -5,6 +5,7 @@
     rgba(174, 159, 142, 0.13)
   ), url(../../../../public/media/hero.jpg);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
