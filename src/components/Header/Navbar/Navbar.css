@@ -1,0 +1,36 @@
+nav{
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    position: sticky;
+    top: 0;
+    background-color: #E6E0DB;
+}
+
+nav > p{
+    font-family: var(--title-font);
+    font-size: 2.5em;
+    color: var(--navbar-item-color);
+}
+
+nav > ul{
+    list-style-type: none;
+
+}
+
+ul>li{
+    display: inline-block;
+    margin-right: 1.5em;
+    color: var(--navbar-item-color);
+    font-family: var(--list-item-font);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+ul > li:hover{
+    color: var(--navbar-hover-color);
+    cursor: pointer;
+    text-decoration: underline;
+}

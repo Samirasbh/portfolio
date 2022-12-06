@@ -1,0 +1,24 @@
+/* import font for titles */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* import font for paragraphs */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+/* import font for list items */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* disable defaults */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variable definitions */
+:root{
+    --navbar-item-color : rgb(47, 45, 116);
+    --navbar-hover-color : rgba(170, 92, 64, 0.817);
+    --list-item-font :'Indie Flower', cursive;
+    --paragraph-font :'Dosis', sans-serif;
+    --title-font :'Quicksand', sans-serif;
+
+}
