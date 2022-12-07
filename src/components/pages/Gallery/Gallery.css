@@ -4,8 +4,32 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.gallery-sect1 > h2{
+    color: #fff;
+    font-style: italic;
+    font-weight: lighter;
+    margin-bottom: 1em;
+}
+
+.gallery-sect1 > p{
+    width: 40em;
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 2em;
+    text-align: center;
+    transition: all 3s ease-in-out;
+}
+
+.hide{
+    opacity: 0.5;
+    transition: all 600ms ease-in-out;
+}
+
 .gallery-title{text-align: center;
     background-color: var(--bg-color);
     padding: 1em;
