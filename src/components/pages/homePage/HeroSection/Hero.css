@@ -1,7 +1,10 @@
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(66, 59, 51, 0.123),
-      rgba(174, 159, 142, 0.13)), url(../../../../../public/media/hero.jpg);
+  background: linear-gradient(
+      rgba(66, 59, 51, 0.123),
+      rgba(174, 159, 142, 0.13)
+    ),
+    url(../../../../../public/media/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -12,7 +15,7 @@
 }
 
 .content {
-  opacity:1;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,12 +29,13 @@
   transition: all 500ms ease-in-out;
 }
 
-.content>h3 {
+.content > h3 {
   font-size: 1.5em;
   color: #fff;
 }
 
-.content>p {
+
+.content > p {
   width: 45em;
   text-align: center;
   line-height: 25px;
@@ -39,3 +43,4 @@
   margin: 2em 0;
   color: #fff;
 }
+

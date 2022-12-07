@@ -1,45 +1,67 @@
-.gallery-sect1{
-    height: 100vh;
-    background:url(../../../../public/media/gallery1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.gallery-sect1 {
+  height: 100vh;
+  background: url(../../../../public/media/gallery1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.gallery-sect1 > h2{
-    color: #fff;
-    font-style: italic;
-    font-weight: lighter;
-    margin-bottom: 1em;
-}
-
-.gallery-sect1 > p{
-    width: 40em;
-    font-size: 1.1em;
-    color: #fff;
-    line-height: 2em;
-    text-align: center;
-    transition: all 3s ease-in-out;
+.gallery-sect1 > h2 {
+  color: #fff;
+  font-style: italic;
+  font-weight: lighter;
+  margin-bottom: 1em;
 }
 
-.hide{
-    opacity: 0.5;
-    transition: all 600ms ease-in-out;
+.gallery-sect1 > p {
+  width: 40em;
+  font-size: 1.1em;
+  color: #fff;
+  line-height: 2em;
+  text-align: center;
+  transition: all 2s linear;
 }
 
-.gallery-title{text-align: center;
-    background-color: var(--bg-color);
-    padding: 1em;
+.hide {
+  opacity: 0.5;
+  transition: all 600ms linear;
 }
-.gallery-sect2{
-    height: auto;
-    padding: 0 2em 2em;
-    background-color: var(--bg-color);
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    justify-content: center;
-    gap: 3em;
+
+.gallery-title {
+  text-align: center;
+  background-color: var(--bg-color);
+  padding: 1em;
+}
+.gallery-title > span{
+    color: var(--navbar-hover-color);
+    border-bottom: 4px solid var(--title-color);
+}
+.gallery-sect2 {
+  height: auto;
+  padding: 0 2em 2em;
+  background-color: var(--bg-color);
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 3em;
+}
+
+
+.hiding-text {
+  animation: hide 2.5s 0s infinite;
+}
+ 
+@keyframes hide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

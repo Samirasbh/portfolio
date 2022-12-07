@@ -2,19 +2,16 @@ import "./Gallery.css";
 import Artwork from "./Artwork";
 
 const Gallery = () => {
-  window.addEventListener("scroll",()=>{
-    if(
-      window.scrollY <= document.querySelector(".gallery-sect1").offsetTop
-    ){
-      document.querySelector(".gallery-sect1").classList.remove("hide")
-    }
-    if(
-      window.scrollY > document.querySelector(".gallery-sect1").offsetTop
-    ){
-      document.querySelector(".gallery-sect1").classList.add("hide")
-    }
 
-  })
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY <= document.querySelector(".gallery-sect1").offsetTop) {
+      document.querySelector(".gallery-sect1").classList.remove("hide");
+    }
+    if (window.scrollY > document.querySelector(".gallery-sect1").offsetTop) {
+      document.querySelector(".gallery-sect1").classList.add("hide");
+    }
+  });
   return (
     <>
       <div className="gallery-sect1">
@@ -29,7 +26,7 @@ const Gallery = () => {
         </p>
       </div>
       <div>
-        <h1 className="gallery-title">skyART GALLERY</h1>
+        <h1 className="gallery-title "><span className="hiding-text">skyART</span> GALLERY</h1>
         <div className="gallery-sect2">
           <Artwork src="/media/img1.jpg" />
           <Artwork src="/media/img2.jpg" />
