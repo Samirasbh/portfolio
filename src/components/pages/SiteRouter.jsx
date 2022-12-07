@@ -1,6 +1,6 @@
 import {BrowserRouter,Route,Routes} from "react-router-dom"
 import Layout from "../layout/Layout"
-import { GalleryPage } from "../layout/Menu"
+import About from "./About/About"
 import Gallery from "./Gallery/Gallery"
 import HomePage from "./homePage/HomePage"
 const SiteRouter = ()=>{
@@ -10,6 +10,7 @@ const SiteRouter = ()=>{
             <Route path="/" element={<Layout/>}>
             <Route index element={<HomePage/>}></Route>
             <Route path="gallery" element={<Gallery/>}></Route>
+            <Route path ="about" element={<About/>}></Route>
 
             </Route>
         </Routes>

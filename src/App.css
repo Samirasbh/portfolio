@@ -30,6 +30,7 @@ h1,h2,h3,h4{
     --navbar-item-color : rgb(47, 45, 116);
     --title-color :rgb(31, 29, 78);
     --navbar-hover-color : rgba(170, 92, 64, 0.817);
+    --bg-color :#E6E0DB;
     --list-item-font :'Indie Flower', cursive;
     --paragraph-font :'Dosis', sans-serif;
     --title-font :'Quicksand', sans-serif;
