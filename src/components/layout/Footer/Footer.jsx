@@ -1,17 +1,14 @@
 import Button from "../../button/Button";
 import "./Footer.css";
 const Footer = () => {
-  window.addEventListener("scroll" , ()=>{
-    if(
-      window.scrollY >= document.querySelector("form") &&
-      window.scrollY < document.querySelector("footer")
-    ){
-      document.querySelector("footer").classList.remove(".vanish")
+  window.addEventListener("scroll", () => {
+    if (window.scrollY >= document.querySelector("footer").offsetTop-750) {
+      document.querySelector("form").classList.remove("vanish");
     }
-    if(window.scrollY < document.querySelector("footer")){
-      document.querySelector("form").classList.add(".vanish")
+    if (window.scrollY < document.querySelector("footer").offsetTop-750) {
+      document.querySelector("form").classList.add("vanish");
     }
-  })
+  });
   return (
     <>
       <footer>
@@ -54,4 +51,4 @@ const Footer = () => {
   );
 };
 
-export default Footer
+export default Footer;
