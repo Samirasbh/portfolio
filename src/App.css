@@ -12,10 +12,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+li{
+    font-family: var(--list-item-font);
+    color: var(--navbar-item-color);
+}
+p{
+    font-family: var(--paragraph-font);
+    color: var(--navbar-item-color);
+}
 
+h1,h2,h3,h4{
+    font-family: var(--title-font);
+    color: var(--title-color);
+}
 /* variable definitions */
 :root{
     --navbar-item-color : rgb(47, 45, 116);
+    --title-color :rgb(31, 29, 78);
     --navbar-hover-color : rgba(170, 92, 64, 0.817);
     --list-item-font :'Indie Flower', cursive;
     --paragraph-font :'Dosis', sans-serif;

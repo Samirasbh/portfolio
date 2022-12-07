@@ -1,13 +1,7 @@
-import About from "./components/About/About";
-import Header from "./components/Header/Header";
+import SiteRouter from "./components/pages/SiteRouter";
 
 function App() {
-  return(
-    <>
-    <Header/>
-    <About/>
-    </>
-  )
+  return <SiteRouter />;
 }
 
 export default App;

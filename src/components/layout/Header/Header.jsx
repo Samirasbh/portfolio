@@ -1,12 +1,12 @@
-import "../../../App.css"
-import "./Navbar.css"
-const Navbar = ()=>{
-return(
+import { HomeLink, LogoLink } from "../Menu"
+import "./Header.css"
+const Header =()=>{
+return (
     <>
     <nav>
-        <p>skyART</p>
+        <p><LogoLink/></p>
         <ul>
-            <li>HOME</li>
+            <li><HomeLink/></li>
             <li>GALLERY</li>
             <li>SHOP</li>
             <li>ABOUT ME</li>
@@ -15,6 +15,7 @@ return(
     </nav>
     </>
 )
+    
 }
 
-export default Navbar;
+export default Header

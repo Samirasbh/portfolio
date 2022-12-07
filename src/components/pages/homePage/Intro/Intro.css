@@ -1,0 +1,33 @@
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro>div{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+}
+
+.intro-cover > img{
+    width: 100%;
+    height: 100%;
+}
+
+.intro-content{
+    text-align: center;
+}
+.p-1{
+    margin: 2em 0;
+}
+.intro-content>h3{
+    font-size: 1.8em;
+}
+.intro-content>p{
+    font-size: 1.2em;
+}
+
+.intro-content > button{
+    margin-top: 1.5em;
+}
